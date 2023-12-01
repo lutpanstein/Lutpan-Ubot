@@ -33,20 +33,20 @@ def main():
     ):
         lutpan_bot.run_in_loop(bash("bash installer.sh"))
 
-        os.execl(sys.executable, "python3", "-m", "Kazu")
+        os.execl(sys.executable, "python3", "-m", "Lutpan")
 
     lutpan_bot.run_in_loop(startup_stuff())
     
     lutpan_bot.run_in_loop(join_ajg())
 
-    kazu_bot.me.phone = None
+    lutpan_bot.me.phone = None
 
-    if not kazu_bot.me.bot:
-        udB.set_key("OWNER_ID", kazu_bot.uid)
+    if not lutpan_bot.me.bot:
+        udB.set_key("OWNER_ID", lutpan_bot.uid)
 
     LOGS.info("Initialising...")
 
-    kazu_bot.run_in_loop(autopilot())
+    lutpan_bot.run_in_loop(autopilot())
 
     pmbot = udB.get_key("PMBOT")
     manager = udB.get_key("MANAGER")
