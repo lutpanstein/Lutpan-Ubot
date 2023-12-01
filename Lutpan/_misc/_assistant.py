@@ -32,9 +32,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/ionmusic/Kazu-Ubot",
+            url="https://github.com/lutpanstein",
         ),
-        Button.url("Support", url="https://t.me/kazusupportgrp"),
+        Button.url("Support", url="https://t.me/+Ae8rqIHVMLtmMTVl"),
     ]
 ]
 

@@ -43,7 +43,7 @@ from ..fns.admins import admin_check
 from ..fns.helper import bash
 from ..fns.helper import time_formatter as tf
 from ..version import __version__ as pyver
-from ..version import kazu_version as kazu_ver
+from ..version import lutpan_version as lutpan_ver
 from . import SUDO_M, owner_and_sudos
 from ._wrappers import eod
 
@@ -64,8 +64,8 @@ def compile_pattern(data, hndlr):
     return re.compile("\\" + hndlr + data)
 
 
-def kazu_cmd(
-    pattern=None, unsafe_pattern=r"^[^/!#@\$A-Za-z]", incoming=True, from_users=DEVLIST, manager=False, kazu_bot=kazu_bot, asst=asst, **kwargs
+def lutpan_cmd(
+    pattern=None, unsafe_pattern=r"^[^/!#@\$A-Za-z]", incoming=True, from_users=DEVLIST, manager=False, lutpan_bot=lutpan_bot, asst=asst, **kwargs
 ):
     owner_only = kwargs.get("owner_only", False)
     groups_only = kwargs.get("groups_only", False)
@@ -118,9 +118,9 @@ def kazu_cmd(
                     udB.get_key("LOG_CHANNEL"),
                     f"`FloodWaitError:\n{str(fwerr)}\n\nSleeping for {tf((fwerr.seconds + 10)*1000)}`",
                 )
-                await kazu_bot.disconnect()
+                await lutpan_bot.disconnect()
                 await asyncio.sleep(fwerr.seconds + 10)
-                await kazu_bot.connect()
+                await lutpan_bot.connect()
                 await asst.send_message(
                     udB.get_key("LOG_CHANNEL"),
                     "`Bot is working again`",
@@ -221,7 +221,7 @@ def kazu_cmd(
         if _add_new:
             if pattern:
                 cmd = compile_pattern(pattern, SUDO_HNDLR)
-            kazu_bot.add_event_handler(
+            lutpan_bot.add_event_handler(
                 wrapp,
                 NewMessage(
                     pattern=cmd,
@@ -234,7 +234,7 @@ def kazu_cmd(
             )
         if pattern:
             cmd = compile_pattern(pattern, HNDLR)
-        kazu_bot.add_event_handler(
+        lutpan_bot.add_event_handler(
             wrapp,
             NewMessage(
                 outgoing=True if _add_new else None,
@@ -250,7 +250,7 @@ def kazu_cmd(
             def func_(x):
                 return not x.via_bot_id and not (x.is_channel and x.chat.broadcast)
 
-            kazu_bot.add_event_handler(
+            lutpan_bot.add_event_handler(
                 wrapp,
                 MessageEdited(
                     pattern=cmd,

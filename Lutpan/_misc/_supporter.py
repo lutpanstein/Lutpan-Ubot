@@ -12,7 +12,7 @@ from base64 import b64decode
 
 from telethon import events, types
 
-from Lutpan._misc._decorators import compile_pattern, kazu_cmd
+from Lutpan._misc._decorators import compile_pattern, lutpan_cmd
 from Lutpan._misc._wrappers import eod, eor
 
 from .. import *
@@ -24,7 +24,7 @@ ALIVE_NAME = lutpan_bot.me.first_name
 BOTLOG_CHATID = BOTLOG = udB.get_key("LOG_CHANNEL")
 
 
-bot = borg = catub = friday = kazu_bot
+bot = borg = catub = friday = lutpan_bot
 catub.cat_cmd = lutpan_cmd
 
 black_list_chats = udB.get_key("BLACKLIST_CHATS")
@@ -84,7 +84,7 @@ class Config((object)):
         )
         TEMP_DOWNLOAD_DIRECTORY = TMP_DOWNLOAD_DIRECTORY
         TEMP_DIR = TMP_DOWNLOAD_DIRECTORY
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Kazu")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Lutpan")
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         TG_BOT_USER_NAME_BF_HER = asst.me.username
         UB_BLACK_LIST_CHAT = [
