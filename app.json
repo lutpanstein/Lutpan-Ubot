@@ -1,0 +1,58 @@
+{
+    "name": "Lutpan Ubot",
+    "description": "Lutpan-Ubot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
+    "logo": "https://graph.org/file/ad02750e78083a8c57e90.jpg",
+    "keywords": [
+        "Telethon",
+        "Pyrogram"
+    ],
+    "repository": "https://github.com/lutpanstein/Lutpanstein-uboti",
+    "success_url": "https://t.me/Lutpanstein",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Ambil di my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Ambil di my.telegram.org",
+            "required": true
+        },
+        "SESSION": {
+            "description": "Silakan isi Telethon Atau Pyrogram V2",
+            "value": ""
+        },
+        "HEROKU_API": {
+            "description": "Isi  Jangan Dikosongin.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Isi  Jangan Dikosongin",
+            "value": "",
+            "required": true
+        }
+    },
+  "addons": [
+    {
+      "plan": "rediscloud",
+      "options": {
+        "maxmemory-policy": "allkeys-lru",
+        "maxmemory-redis": "2GB"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "basic"
+        }
+    }
+}
