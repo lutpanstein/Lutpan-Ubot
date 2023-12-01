@@ -1,13 +1,13 @@
 {
-    "name": "Lutpan Ubot",
-    "description": "Lutpan-Ubot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
+    "name": "Lutpan UBot",
+    "description": Lutpan-Ubot Dibuat Untuk String Telethon Dan Pyrogram Untuk ID 5 Pasti Aman.",
     "logo": "https://graph.org/file/ad02750e78083a8c57e90.jpg",
     "keywords": [
         "Telethon",
         "Pyrogram"
     ],
-    "repository": "https://github.com/lutpanstein/Lutpanstein-uboti",
-    "success_url": "https://t.me/Lutpanstein",
+    "repository": "https://github.com/lutpanstein/lutpansteinubot",
+    "success_url": "https://t.me/lutpanstein",
     "stack": "container",
     "env": {
         "API_ID": {
