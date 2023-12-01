@@ -39,7 +39,7 @@ if sys.argv[0] == "-m":
     _lutpan_cache = {}
     _ignore_eval = []
 
-    udB = KazuDB()
+    udB = LutpanDB()
     update_envs()
 
     LOGS.info(f"Connecting to {udB.name}...")
@@ -65,7 +65,7 @@ if sys.argv[0] == "-m":
         lutpan_bot = LutpanClient(
             validate_session(Var.SESSION, LOGS),
             udB=udB,
-            app_version=kazu_version,
+            app_version=lutpan_version,
             device_model="Lutpan",
         )
         kazu_bot.run_in_loop(autobot())
@@ -94,7 +94,7 @@ if sys.argv[0] == "-m":
     DUAL_HNDLR = udB.get_key("DUAL_HNDLR") or "/"
     SUDO_HNDLR = udB.get_key("SUDO_HNDLR") or "NO_HNDLR"
 else:
-    print("Lutpan 2022 © Lutpan-Ubot")
+    print("Lutpan 2023 © Lutpan-Ubot")
 
     from logging import getLogger
 
