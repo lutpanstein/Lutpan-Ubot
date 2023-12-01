@@ -74,7 +74,7 @@ def LUTPANPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/ionmusic/Kazu-Ubot"),
+        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubot"),
         Button.url(get_string("bot_4"), "t.me/kazusupportgrp"),
     ]
 ]
