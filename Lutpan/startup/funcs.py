@@ -172,7 +172,7 @@ async def autobot():
     await asyncio.sleep(1)
     await lutpan_bot.send_message(bf, "/newbot")
     await asyncio.sleep(1)
-    isdone = (await lutpanb_bot.get_messages(bf, limit=1))[0].text
+    isdone = (await lutpan_bot.get_messages(bf, limit=1))[0].text
     if isdone.startswith("That I cannot do.") or "20 bots" in isdone:
         LOGS.critical(
             "Tolong buat Bot dari @BotFather dan tambahkan tokennya di BOT_TOKEN, sebagai env var dan mulai ulang saya."
