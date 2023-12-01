@@ -176,7 +176,7 @@ if udB.get_key("PMSETTING"):
             approve_user(miss.id)
             await delete_pm_warn_msgs(miss.id)
             try:
-                await kazu_bot.edit_folder(miss.id, folder=0)
+                await lutpan_bot.edit_folder(miss.id, folder=0)
             except BaseException:
                 pass
             try:
@@ -212,7 +212,7 @@ if udB.get_key("PMSETTING"):
         if not is_approved(user.id) and event.text != UND:
             if Redis("MOVE_ARCHIVE"):
                 try:
-                    await kazu_bot.edit_folder(user.id, folder=1)
+                    await lutpan_bot.edit_folder(user.id, folder=1)
                 except BaseException as er:
                     LOGS.info(er)
             if event.media and not udB.get_key("DISABLE_PMDEL"):
@@ -315,7 +315,7 @@ if udB.get_key("PMSETTING"):
                             caption=message_,
                         )
                     else:
-                        _to_delete[user.id] = await kazu_bot.send_message(
+                        _to_delete[user.id] = await lutpan_bot.send_message(
                             user.id, message_
                         )
                 LASTMSG.update({user.id: event.text})
@@ -344,13 +344,13 @@ if udB.get_key("PMSETTING"):
                     except Exception as e:
                         LOGS.info(str(e))
                 elif PMPIC:
-                    _to_delete[user.id] = await kazu_bot.send_file(
+                    _to_delete[user.id] = await lutpan_bot.send_file(
                         user.id,
                         PMPIC,
                         caption=message_,
                     )
                 else:
-                    _to_delete[user.id] = await kazu_bot.send_message(
+                    _to_delete[user.id] = await lutpan_bot.send_message(
                         user.id, message_
                     )
             LASTMSG.update({user.id: event.text})
@@ -370,8 +370,8 @@ if udB.get_key("PMSETTING"):
                         "PMPermit is messed! Pls restart the bot!!",
                     )
                     return LOGS.info("COUNT_PM is messed.")
-                await kazu_bot(BlockRequest(user.id))
-                await kazu_bot(ReportSpamRequest(peer=user.id))
+                await lutpan_bot(BlockRequest(user.id))
+                await lutpan_bot(ReportSpamRequest(peer=user.id))
                 await asst.edit_message(
                     int(udB.get_key("LOG_CHANNEL")),
                     _not_approved[user.id],
@@ -635,7 +635,7 @@ async def list_approved(event):
     re.compile(
         b"approve_(.*)",
     ),
-    from_users=[kazu_bot.uid],
+    from_users=[lutpan_bot.uid],
 )
 async def apr_in(event):
     uid = int(event.data_match.group(1).decode("UTF-8"))
@@ -679,7 +679,7 @@ async def apr_in(event):
     re.compile(
         b"disapprove_(.*)",
     ),
-    from_users=[kazu_bot.uid],
+    from_users=[lutpan_bot.uid],
 )
 async def disapr_in(event):
     uid = int(event.data_match.group(1).decode("UTF-8"))
@@ -745,7 +745,7 @@ async def blck_in(event):
 async def unblck_in(event):
     uid = int(event.data_match.group(1).decode("UTF-8"))
     try:
-        await kazu_bot(UnblockRequest(uid))
+        await lutpan_bot(UnblockRequest(uid))
     except BaseException:
         pass
     try:
@@ -766,7 +766,7 @@ async def ytfuxist(e):
         await e.answer("Deleted.")
         await e.delete()
     except BaseException:
-        await kazu_bot.delete_messages(e.chat_id, e.id)
+        await lutpan_bot.delete_messages(e.chat_id, e.id)
 
 
 @in_pattern(re.compile("ip_(.*)"), owner=True)
@@ -811,7 +811,7 @@ async def in_pm_ans(event):
                 await event.builder.document(
                     res,
                     title="Inline PmPermit",
-                    description="[ᴋᴀᴢᴜ](https://t.me/disinikazu)",
+                    description="[ʟᴜᴛᴘᴀɴ](https://t.me/Lutpanstein)",
                     text=msg_,
                     buttons=buttons,
                     link_preview=False,

@@ -22,11 +22,11 @@ try:
     from ProfanityDetector import detector
 except ImportError:
     detector = None
-from . import LOG_CHANNEL, LOGS, asst, kazu_bot, get_string, types, udB
+from . import LOG_CHANNEL, LOGS, asst, lutpan_bot, get_string, types, udB
 from ._inline import something
 
 
-@kazu_bot.on(events.ChatAction())
+@lutpan_bot.on(events.ChatAction())
 async def Function(event):
     try:
         await DummyHandler(event)

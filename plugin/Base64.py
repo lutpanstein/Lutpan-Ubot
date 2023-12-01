@@ -16,7 +16,7 @@
 
 import base64
 
-from . import kazu_cmd
+from . import lutpan_cmd
 
 
 @lutpan_cmd(pattern="encode ?(.*)")

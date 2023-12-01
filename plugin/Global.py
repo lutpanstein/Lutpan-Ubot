@@ -99,7 +99,7 @@ _gdemote_rights = ChatAdminRights(
 @lutpan_cmd(pattern="gpromote( (.*)|$)", fullsudo=True)
 async def _(e):
     x = e.pattern_match.group(1).strip()
-    kazu_bot = e.client
+    lutpan_bot = e.client
     if not x:
         return await e.eor(get_string("schdl_2"), time=5)
     user = await e.get_reply_message()
@@ -207,7 +207,7 @@ async def _(e):
 @lutpan_cmd(pattern="gdemote( (.*)|$)", fullsudo=True)
 async def _(e):
     x = e.pattern_match.group(1).strip()
-    kazu_bot = e.client
+    lutpan_bot = e.client
     if not x:
         return await e.eor(get_string("schdl_2"), time=5)
     user = await e.get_reply_message()

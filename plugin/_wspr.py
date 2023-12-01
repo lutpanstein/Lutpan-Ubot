@@ -31,7 +31,7 @@ from . import (
 buddhhu = {}
 
 
-@kazu_cmd(
+@lutpan_cmd(
     pattern="wspr( (.*)|$)",
 )
 async def _(e):
@@ -62,7 +62,7 @@ async def _(e):
         query = zzz[1]
         if query.isdigit():
             query = int(query)
-        logi = await kazu_bot.get_entity(query)
+        logi = await lutpan_bot.get_entity(query)
         if not isinstance(logi, types.User):
             raise ValueError("Invalid Username.")
     except IndexError:
@@ -108,7 +108,7 @@ async def _(e):
         query = zzz[1]
         if query.isdigit():
             query = int(query)
-        logi = await kazu_bot(gu(id=query))
+        logi = await lutpan_bot(gu(id=query))
         user = logi.users[0]
         mention = inline_mention(user)
         x = user.status

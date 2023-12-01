@@ -36,13 +36,13 @@ from telethon.tl.functions.messages import GetFullChatRequest, SetHistoryTTLRequ
 from telethon.tl.types import InputMessagesFilterPinned
 from telethon.utils import get_display_name
 
-from Kazu.dB import DEVLIST
-from Kazu.fns.admins import ban_time
+from Lutpan dB import DEVLIST
+from Lutpan.fns.admins import ban_time
 
 from . import (
     HNDLR,
     LOGS,
-    kazu_cmd,
+    lutpan_cmd,
     eod,
     eor,
     get_string,

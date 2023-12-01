@@ -71,7 +71,7 @@ async def an(e):
             txt, btn = get_msg_button(wt.text)
         add_note(chat, wrd, txt, None, btn)
     await e.eor(get_string("notes_2").format(wrd))
-    kazu_bot.add_handler(notes, events.NewMessage())
+    lutpan_bot.add_handler(notes, events.NewMessage())
 
 
 @lutpan_cmd(pattern="remnote( (.*)|$)", admins_only=True)

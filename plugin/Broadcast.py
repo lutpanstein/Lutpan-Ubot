@@ -43,7 +43,7 @@ async def gcast(event):
         return await eor(
             event, "`ketik pesan bejirrr minimal direply biar bisa gikess`"
         )
-    kk = await event.eor("`lagi dikirim meskipun ga sederes gikesan Lutpan`")
+    kk = await event.eor("`lagi ngirim ya bejirrr meskipun gikesan kalian ga sederes gikesan lutpan`")
     er = 0
     done = 0
     err = ""

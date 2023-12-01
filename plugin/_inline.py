@@ -15,10 +15,10 @@ from telethon import Button
 from telethon.tl.types import InputWebDocument, Message
 from telethon.utils import resolve_bot_file_id
 
-from Kazu._misc._assistant import callback, in_pattern
-from Kazu.dB._core import HELP, LIST
-from Kazu.fns.helper import gen_chlog, time_formatter, updater
-from Kazu.fns.misc import split_list
+from Lutpan._misc._assistant import callback, in_pattern
+from Lutpan.dB._core import HELP, LIST
+from Lutpan.fns.helper import gen_chlog, time_formatter, updater
+from Lutpan.fns.misc import split_list
 
 from . import (
     HNDLR,
@@ -110,7 +110,7 @@ async def setting(event):
         z.extend(x)
     await event.edit(
         get_string("inline_4").format(
-            kazu,
+            lutpan,
             len(HELP.get("Official", [])),
             len(HELP.get("Addons", [])),
             len(z),
@@ -215,7 +215,7 @@ async def _(event):
             file.write(tl_chnglog)
         await event.edit(
             get_string("upd_5"),
-            file="kazu_updates.txt",
+            file="lutpan_updates.txt",
             buttons=[
                 [Button.inline("• Uᴘᴅᴀᴛᴇ Nᴏᴡ •", data="updatenow")],
                 [Button.inline("«", data="ownr")],

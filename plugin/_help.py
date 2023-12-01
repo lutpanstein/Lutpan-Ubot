@@ -15,7 +15,7 @@ from telethon.tl.custom import Button
 from Lutpan.dB._core import HELP, LIST
 from Lutpan.fns.tools import cmd_regex_replace
 
-from . import HNDLR, LOGS, OWNER_NAME, asst, kazu_cmd, get_string, inline_pic, udB
+from . import HNDLR, LOGS, OWNER_NAME, asst, lutpan_cmd, get_string, inline_pic, udB
 
 _main_help_menu = [
     [
@@ -36,7 +36,7 @@ async def _help(lutpan):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n◈ ᴋᴀᴢᴜ ᴜʙᴏᴛ"
+                output += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
                 await lutpan.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
@@ -51,7 +51,7 @@ async def _help(lutpan):
                         x += HNDLR + d
                         x += "\n"
                     x += "\n◈ ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
-                    await kazu.eor(x)
+                    await lutpan.eor(x)
                 except BaseException:
                     file = None
                     compare_strings = []
@@ -85,10 +85,10 @@ async def _help(lutpan):
                         for i in HELP["Addons"][file]:
                             output += i
                     output += "\n◈ ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
-                    await kazu.eor(output)
+                    await lutpan.eor(output)
         except BaseException as er:
             LOGS.exception(er)
-            await kazu.eor("Error 🤔 occured.")
+            await lutpan.eor("Error 🤔 occured.")
     else:
         try:
             results = await lutpan.client.inline_query(asst.me.username, "lutpan")

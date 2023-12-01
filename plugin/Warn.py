@@ -36,7 +36,7 @@ from . import eor, get_string, inline_mention, udB, lutpan_cmd
     admins_only=True,
 )
 async def warn(e):
-    kazu_bot = e.client
+    lutpan_bot = e.client
     reply = await e.get_reply_message()
     if len(e.text) > 5 and " " not in e.text[5]:
         return
@@ -47,7 +47,7 @@ async def warn(e):
         try:
             user = e.text.split()[1]
             if user.startswith("@"):
-                ok = await kazu_bot.get_entity(user)
+                ok = await lutpan_bot.get_entity(user)
                 user = ok.id
             else:
                 user = int(user)
@@ -74,19 +74,19 @@ async def warn(e):
                 return await e.eor("`Ada yang salah.`", time=5)
         elif "kick" in action:
             try:
-                await kazu_bot.kick_participant(e.chat_id, user)
+                await lutpan_bot.kick_participant(e.chat_id, user)
             except BaseException:
                 return await e.eor("`Ada yang salah.`", time=5)
         elif "mute" in action:
             try:
-                await kazu_bot.edit_permissions(
+                await lutpan_bot.edit_permissions(
                     e.chat_id, user, until_date=None, send_messages=False
                 )
             except BaseException:
                 return await e.eor("`Ada yang salah.`", time=5)
         add_warn(e.chat_id, user, count + 1, r)
         c, r = warns(e.chat_id, user)
-        ok = await kazu_bot.get_entity(user)
+        ok = await lutpan_bot.get_entity(user)
         user = inline_mention(ok)
         r = r.split("|$|")
         text = f"Pengguna {user} Mendapat {action} Karena {count+1} Peringatan.\n\n"
@@ -95,7 +95,7 @@ async def warn(e):
         await e.eor(text)
         return reset_warn(e.chat_id, ok.id)
     add_warn(e.chat_id, user, count + 1, r)
-    ok = await kazu_bot.get_entity(user)
+    ok = await lutpan_bot.get_entity(user)
     user = inline_mention(ok)
     await eor(
         e,

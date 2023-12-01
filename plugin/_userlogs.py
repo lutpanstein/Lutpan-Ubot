@@ -197,7 +197,7 @@ if udB.get_key("TAG_LOG"):
         chat, msg = who_tag(id)
         if chat and msg:
             try:
-                await kazu_bot.send_message(chat, e.message, reply_to=msg)
+                await lutpan_bot.send_message(chat, e.message, reply_to=msg)
             except BaseException as er:
                 LOGS.exception(er)
 

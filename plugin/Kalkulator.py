@@ -13,7 +13,7 @@
 
 import re
 
-from . import Button, asst, kazu_cmd, callback, get_string, in_pattern, udB
+from . import Button, asst, lutpan_cmd, callback, get_string, in_pattern, udB
 
 CALC = {}
 

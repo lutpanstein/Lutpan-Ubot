@@ -319,8 +319,8 @@ async def doie(e):
     if "main(" not in match:
         new_m = "".join(" " * 4 + i + "\n" for i in match.split("\n"))
         match = DUMMY_CPP.replace("!code", new_m)
-    open("cpp-kazu.cpp", "w").write(match)
-    m = await bash("g++ -o CppKazu cpp-lutpan.cpp")
+    open("cpp-lutpan.cpp", "w").write(match)
+    m = await bash("g++ -o CppLutpan cpp-lutpan.cpp")
     o_cpp = f"• **Eval-Cpp**\n`{match}`"
     if m[1]:
         o_cpp += f"\n\n**• Error :**\n`{m[1]}`"

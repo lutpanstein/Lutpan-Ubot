@@ -130,7 +130,7 @@ async def get_readable_time(seconds: int) -> str:
 
 @callback("alive")
 async def alive(event):
-    text = alive_txt.format(kazu_version, KazuVer, __version__)
+    text = alive_txt.format(lutpan_version, LutpanVer, __version__)
     await event.answer(text, alert=True)
 
 
@@ -245,7 +245,7 @@ async def restart(ayra):
     if len(sys.argv) > 1:
         os.execl(sys.executable, sys.executable, "main.py")
     else:
-        os.execl(sys.executable, sys.executable, "-m", "Kazu")
+        os.execl(sys.executable, sys.executable, "-m", "Lutpan")
 
 
 @lutpan_cmd(
@@ -270,7 +270,7 @@ async def _(event):
         with open(file, "r") as f:
             code = f.read()[-2500:]
         file = await Carbon(
-            file_name="kazu-logs",
+            file_name="lutpan-logs",
             code=code,
             backgroundColor=choice(ATRA_COL),
         )
@@ -346,7 +346,7 @@ async def _(e):
         await bash("git pull -f && pip3 install -r requirements.txt")
         call_back()
         await xx.edit(get_string("upd_7"))
-        os.execl(sys.executable, "python3", "-m", "Kazu")
+        os.execl(sys.executable, "python3", "-m", "Lutpan")
         # return
     m = await updater()
     branch = (Repo.init()).active_branch
@@ -366,7 +366,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/ionmusic/Kazu-Ubot/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/lutpanstein/lutpansteinubot/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )

@@ -57,7 +57,7 @@ async def _(event):
     sleep(3)
     await xx.edit("Cuma Mau Bilang")
     sleep(2)
-    await xx.edit("Kalo Bang Kazu ...")
+    await xx.edit("Kalo Bang Lutpan ...")
     sleep(1)
     await xx.edit("Ganteng Banget")
 
@@ -120,7 +120,7 @@ async def _(event):
     await event.delete()
 
 
-@kazu_cmd(pattern="dp$")
+@lutpab_cmd(pattern="dp$")
 async def _(event):
     await event.client.send_message(
         event.chat_id,
