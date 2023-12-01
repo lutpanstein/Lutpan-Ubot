@@ -8,8 +8,8 @@
 <b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon and Pyrogram.</b>
 
 <a href="https://github.com/lutpanstein/lutpansteinubot/commits"> <img src="https://github.com/lutpanstein/lutpansteinubot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ionmusic/Kazu-Ubot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/ionmusic/Kazu-Ubot/graphs/commit-activity)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/lutpanstein/lutpansteinubot)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/lutpanstein/lutpansteinubot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy)](https://app.codacy.com/gh/ionmusic/Lutpan-Ubot/dashboard)
 [![GitHub Forks](https://img.shields.io/github/forks/lutpanstein/lutpansteinubot?&logo=github)](https://github.com/lutpanstein/lutpansteinubot/fork)
 [![GitHub Stars](https://img.shields.io/github/stars/lutpanstein/lutpansteinubot?&logo=github)](https://github.com/lutpanstein/lutpansteinubot/stargazers)
@@ -71,7 +71,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 # License
 [![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
-Kazu is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+Lutpan is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
 
 ---
 
