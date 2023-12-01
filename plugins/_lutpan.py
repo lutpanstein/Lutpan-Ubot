@@ -22,8 +22,8 @@ REPOMSG = """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/ionmusic/Kazu-Ubot"),
-        Button.url("Addons", "https://github.com/ionmusic/Addons"),
+        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubot"),
+        Button.url("Addons", "https://github.com/lutpanstein/Addons"),
     ],
     [Button.url("GROUP", "https://t.me/+Ae8rqIHVMLtmMTVl")],
 ]
