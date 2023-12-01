@@ -88,4 +88,4 @@ def vc_connection(udB, lutpan_bot):
         except Exception as er:
             LOGS.info("Saat membuat Klien untuk VC.")
             LOGS.exception(er)
-    return lutpanstein_bot
+    return lutpan_bot
