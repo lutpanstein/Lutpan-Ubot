@@ -44,13 +44,13 @@ db_url = 0
 
 
 async def autoupdate_local_database():
-    from .. import asst, udB, kazu_bot, Var
+    from .. import asst, udB, lutpan_bot, Var
 
     global db_url
     if db_url := (
         udB.get_key("TGDB_URL")
         or Var.TGDB_URL
-        or kazu_bot._cache.get("TGDB_URL")
+        or lutpan_bot._cache.get("TGDB_URL")
     ):
         _split = db_url.split("/")
         _channel = _split[-2]
@@ -100,7 +100,7 @@ async def join_ajg():
 
     try:
         await lutpan_bot(JoinChannelRequest("kynansupport"))
-        await lutpan_bot(JoinChannelRequest("KazuSupportGrp"))
+        await lutpan_bot(JoinChannelRequest("KazuSupport"))
     except rpcerrorlist.ChannelPrivateError:
         print(
             "Lu Di Ban Di @KazuSupportGrp atau @kynansupport Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu Sana."
@@ -345,7 +345,7 @@ async def customize():
         if not lutpan_bot.me.username:
             sir = lutpan_bot.me.first_name
         else:
-            sir = f"@lutpan_bot.me.username}"
+            sir = f"@{lutpan_bot.me.username}"
         file = random.choice(
             [
                 "https://graph.org//file/d854abd533a783c6642b1.jpg",
