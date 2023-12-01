@@ -57,7 +57,7 @@ from . import *
 if run_as_module:
     from ..dB._core import ADDONS, HELP, LIST, LOADED
 
-from ..version import kazu_version
+from ..version import lutpan_version
 from .FastTelethon import download_file as downloadable
 from .FastTelethon import upload_file as uploadable
 

@@ -503,19 +503,19 @@ def telegraph_client():
     if TELEGRAPH:
         return TELEGRAPH[0]
 
-    from .. import udB, kazu_bot
+    from .. import udB, lutpan_bot
 
     token = udB.get_key("_TELEGRAPH_TOKEN")
     TelegraphClient = Telegraph(token)
     if token:
         TELEGRAPH.append(TelegraphClient)
         return TelegraphClient
-    gd_name = kazu_bot.full_name
+    gd_name = lutpan_bot.full_name
     short_name = gd_name[:30]
     profile_url = (
-        f"https://t.me/{kazu_bot.me.username}"
-        if kazu_bot.me.username
-        else "https://t.me/kazusupportgrp"
+        f"https://t.me/{lutpan_bot.me.username}"
+        if lutpan_bot.me.username
+        else "https://t.me/+Ae8rqIHVMLtmMTVl"
     )
     try:
         TelegraphClient.create_account(
@@ -524,7 +524,7 @@ def telegraph_client():
     except Exception as er:
         if "SHORT_NAME_TOO_LONG" in str(er):
             TelegraphClient.create_account(
-                short_name="kazuruser", author_name=gd_name, author_url=profile_url
+                short_name="lutpanruser", author_name=gd_name, author_url=profile_url
             )
         else:
             LOGS.exception(er)
@@ -556,7 +556,7 @@ async def Carbon(
     kwargs["text"] = code
     kwargs["theme"] = kwargs.get("theme", "meadow")
     kwargs["darkMode"] = kwargs.get("darkMode", True)
-    kwargs["title"] = kwargs.get("title", "KazuUbot")
+    kwargs["title"] = kwargs.get("title", "LutpanUbot")
     # else:
     #    kwargs["code"] = code
     con = await async_searcher(base_url, post=True, json=kwargs, re_content=True)
