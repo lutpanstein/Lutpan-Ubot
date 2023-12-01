@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REPO="https://github.com/lutpanstein/lutpansteinubot"
-DIR="/root/lutpanstein"
+DIR="/root/ionmusic"
 
 spinner(){
     local pid=$!
@@ -36,7 +36,7 @@ clone_repo(){
             fi
             return
     fi
-    echo -e "Cloning Lutpan-Ubot ${BRANCH}... "
+    echo -e "Cloning Kazu-Ubot ${BRANCH}... "
     git clone -b $BRANCH $REPO $DIR
 }
 
