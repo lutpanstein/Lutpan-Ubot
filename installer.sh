@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/lutpanstein/Lutpanstein-uboti"
+REPO="https://github.com/lutpanstein/lutpansteinubot"
 DIR="/root/lutpanstein"
 
 spinner(){
@@ -36,7 +36,7 @@ clone_repo(){
             fi
             return
     fi
-    echo -e "Cloning Kazu-Ubot ${BRANCH}... "
+    echo -e "Cloning Lutpan-Ubot ${BRANCH}... "
     git clone -b $BRANCH $REPO $DIR
 }
 
