@@ -197,7 +197,7 @@ async def autobot():
     await lutpan_bot.send_message(bf, username)
     await asyncio.sleep(1)
     isdone = (await lutpan_bot.get_messages(bf, limit=1))[0].text
-    await kazu_bot.send_read_acknowledge("botfather")
+    await lutpan_bot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
         username = f"lutpan_{str(who.id)[6:]}{ran}_bot"
@@ -449,7 +449,7 @@ async def ready():
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Lutpan Ubot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(kazu_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Lutpan Ubot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(lutpan_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         if prev_spam := udB.get_key("LAST_UPDATE_LOG_SPAM"):
             try:
@@ -503,7 +503,7 @@ async def WasItRestart(udb):
     key = udb.get_key("_RESTART")
     if not key:
         return
-    from .. import asst, kazu_bot
+    from .. import asst, lutpan_bot
 
     try:
         data = key.split("_")
