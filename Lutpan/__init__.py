@@ -53,7 +53,7 @@ if sys.argv[0] == "-m":
         if DUAL_MODE:
             udB.del_key("DUAL_MODE")
             DUAL_MODE = False
-        kazu_bot = None
+        lutpan_bot = None
 
         if not udB.get_key("BOT_TOKEN"):
             LOGS.critical(
@@ -68,7 +68,7 @@ if sys.argv[0] == "-m":
             app_version=lutpan_version,
             device_model="Lutpan",
         )
-        kazu_bot.run_in_loop(autobot())
+        lutpan_bot.run_in_loop(autobot())
 
     asst = LutpanClient(None, bot_token=udB.get_key("BOT_TOKEN"), udB=udB)
 
@@ -82,9 +82,9 @@ if sys.argv[0] == "-m":
             except Exception as er:
                 LOGS.exception(er)
     elif not asst.me.bot_inline_placeholder:
-        kazu_bot.run_in_loop(enable_inline(kazu_bot, asst.me.username))
+        lutpan_bot.run_in_loop(enable_inline(lutpan_bot, asst.me.username))
 
-    vcClient = vc_connection(udB, kazu_bot)
+    vcClient = vc_connection(udB, lutpan_bot)
 
     _version_changes(udB)
 
