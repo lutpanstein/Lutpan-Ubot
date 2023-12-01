@@ -65,10 +65,10 @@ _start = [
 @callback("ownerinfo")
 async def own(event):
     msg = Owner_info_msg.format(
-        mention=event.sender.mention, me=inline_mention(kazu_bot.me)
+        mention=event.sender.mention, me=inline_mention(lutpan_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@kazusupportgrp**"
+        msg += "\n\n• Powered by **@Lutpanstein**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],
@@ -104,7 +104,7 @@ async def ayra(event):
             )
     if event.sender_id not in SUDO_M.fullsudos:
         ok = ""
-        me = inline_mention(kazu_bot.me)
+        me = inline_mention(lutpan_bot.me)
         mention = inline_mention(event.sender)
         if args and args != "set":
             await get_stored_file(event, args)
@@ -112,7 +112,7 @@ async def ayra(event):
             if udB.get_key("PMBOT"):
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
-                f"Hey there {mention}, this is Kazu Assistant of {me}!\n\n{ok}",
+                f"Hey there {mention}, this is Lutpan Assistant of {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
                 buttons=[Button.inline("Info.", data="ownerinfo")]
                 if Owner_info_msg
@@ -159,7 +159,7 @@ async def ayra(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users("BOT_USERS"))
-    msg = """Kazu Assistant - Stats
+    msg = """Lutpan Assistant - Stats
 Total Users - {}""".format(
         ok,
     )

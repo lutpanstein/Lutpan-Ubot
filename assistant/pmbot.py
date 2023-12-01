@@ -18,9 +18,9 @@ from telethon.tl.functions.messages import GetFullChatRequest
 from telethon.tl.types import Channel, Chat
 from telethon.utils import get_display_name
 
-from Kazu.dB.asst_fns import *
-from Kazu.dB.botchat_db import *
-from Kazu.fns.helper import inline_mention
+from Lutpan.dB.asst_fns import *
+from Lutpan dB.botchat_db import *
+from Lutpan.fns.helper import inline_mention
 
 from . import *
 

@@ -18,7 +18,7 @@ from telethon.errors.rpcerrorlist import FilePartLengthInvalidError, MediaEmptyE
 from telethon.tl.types import DocumentAttributeAudio, DocumentAttributeVideo
 from telethon.tl.types import InputWebDocument as wb
 
-from Kazu.fns.helper import (
+from Lutpan.fns.helper import (
     bash,
     fast_download,
     humanbytes,

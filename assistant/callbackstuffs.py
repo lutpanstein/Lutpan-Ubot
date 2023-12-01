@@ -322,7 +322,7 @@ async def update(eve):
         await eve.edit(get_string("clst_1"))
         call_back()
         await bash("git pull && pip3 install -r requirements.txt")
-        execl(sys.executable, sys.executable, "-m", "Kazu")
+        execl(sys.executable, sys.executable, "-m", "Lutpan")
 
 
 @callback(re.compile("changes(.*)"), owner=True)
@@ -348,7 +348,7 @@ async def changes(okk):
                 language="md",
             )
             return await okk.edit(
-                f"**• Kazu Ubot •**{cli}", file=img, buttons=button
+                f"**• Lutpan Ubot •**{cli}", file=img, buttons=button
             )
         except Exception as er:
             LOGS.exception(er)
@@ -356,14 +356,14 @@ async def changes(okk):
     if len(changelog_str) > 1024:
         await okk.edit(get_string("upd_4"))
         await asyncio.sleep(2)
-        with open("kazu_updates.txt", "w+") as file:
+        with open("lutpan_updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await okk.edit(
             get_string("upd_5"),
-            file="kazu_updates.txt",
+            file="lutpan_updates.txt",
             buttons=button,
         )
-        remove("kazu_updates.txt")
+        remove("lutpan_updates.txt")
         return
     await okk.edit(
         changelog_str,
@@ -427,7 +427,7 @@ async def _(e):
         code = await conv.get_response()
         if GDrive._create_token_file(code=code.text):
             await conv.send_message(
-                "`Berhasil!\nAnda siap menggunakan Google Drive Kazu Ubot.`",
+                "`Berhasil!\nAnda siap menggunakan Google Drive Lutpan Ubot.`",
                 buttons=Button.inline("Main Menu", data="setter"),
             )
         else:

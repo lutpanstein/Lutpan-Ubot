@@ -18,8 +18,8 @@ from telethon.tl.alltlobjects import LAYER, tlobjects
 from telethon.tl.types import DocumentAttributeAudio as Audio
 from telethon.tl.types import InputWebDocument as wb
 
-from Kazu.fns.misc import google_search
-from Kazu.fns.tools import (
+from Lutpan.fns.misc import google_search
+from Lutpan.fns.tools import (
     _webupload_cache,
     async_searcher,
     get_ofox,
@@ -28,7 +28,7 @@ from Kazu.fns.tools import (
 )
 
 from . import *
-from . import _kazu_cache
+from . import _lutpan_cache
 
 SUP_BUTTONS = [
     [
@@ -466,7 +466,7 @@ async def twitter_search(event):
         )
     try:
         return await event.answer(
-            _kazu_cache["twitter"][match],
+            _lutpan_cache["twitter"][match],
             switch_pm="• Twitter Search •",
             switch_pm_param="start",
         )
@@ -502,10 +502,10 @@ async def twitter_search(event):
         )
     swi_ = f"🐦 Showing {len(reso)} Results!" if reso else "No User Found :("
     await event.answer(reso, switch_pm=swi_, switch_pm_param="start")
-    if _kazu_cache.get("twitter"):
-        _kazu_cache["twitter"].update({match: reso})
+    if _lutpan_cache.get("twitter"):
+        _lutpan_cache["twitter"].update({match: reso})
     else:
-        _kazu_cache.update({"twitter": {match: reso}})
+        _lutpan_cache.update({"twitter": {match: reso}})
 
 
 _savn_cache = {}
@@ -574,7 +574,7 @@ async def inline_tl(ay):
             [
                 await ay.builder.article(
                     title="How to Use?",
-                    description="Tl Searcher by Kazu",
+                    description="Tl Searcher by Lutpan",
                     url="https://t.me/stufsupport",
                     text=text,
                 )
