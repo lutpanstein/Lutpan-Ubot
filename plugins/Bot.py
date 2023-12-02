@@ -82,19 +82,11 @@ buttons = [
 # Will move to strings
 alive_txt = """
 ◈ ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ
- "😎",
-        entities=[
-            MessageEntity(
-                type=Sticker.CUSTOM_EMOJI,
-                offset=0,
-                length=2,
-                custom_emoji_id="6208473688493263997",
-            )]
-    )
-
+ 
   ◈ Version - {}
   ◈ Lutpanstein - {}
   ◈ Telethon - {}
+  ◈ Remake by Lutpan || Thanks for Kazu
 """
 
 in_alive = "{}\n\n◈ <b>Lutpan Version -><b> <code>{}</code>\n◈ <b>Lutpan -></b> <code>{}</code>\n◈ <b>Python -></b> <code>{}</code>\n◈ <b>Waktu aktif -></b> <code>{}</code>\n◈ <b>Branch -></b> [ {} ]\n\n• <b>© ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ</b>"

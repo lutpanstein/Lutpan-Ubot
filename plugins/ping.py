@@ -84,14 +84,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**UBOTNYA LUTPAN NYALA YA AJG **
-                MessageEntity(
-                type=Sticker.CUSTOM_EMOJI,
-                offset=0,
-                length=2,
-                custom_emoji_id="6208473688493263997",
-            )]
-    )\n**PING PING PING APAAN.. NI PINGNYA SEGINI** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**UBOTNYA LUTPAN NYALA YA AJG 🍭**\n**PING LU SEGEDE INI WOY** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
