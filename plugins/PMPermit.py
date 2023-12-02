@@ -828,7 +828,7 @@ async def in_pm_ans(event):
                 title="Inline PMPermit.",
                 type=_type,
                 text=msg_,
-                description="[ʟᴜᴛᴘᴀɴ](https://t.me/@Lutpanstein)",
+                description="[ʟᴜᴛᴘᴀɴ](https://t.me/Lutpanstein)",
                 include_media=include_media,
                 buttons=buttons,
                 thumb=cont,
