@@ -168,7 +168,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
+    help_ += "\n◈ 〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
     buttons = []
     if inline_pic():
         data = f"sndplug_{key}_{file}"
@@ -371,7 +371,7 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Lutpan",
+                            title="Lutpan No Counter",
                             text=txt,
                             description="@Lutpanstein",
                             buttons=btn,
@@ -386,7 +386,7 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Lutpan",
+                        title="Lutpan No Counter",
                         type=_type,
                         text=txt,
                         description="@Lutpanstein",
@@ -401,7 +401,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Lutpan", text=txt, link_preview=False, buttons=btn)
+        await builder.article("Lutpan No Counter", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 

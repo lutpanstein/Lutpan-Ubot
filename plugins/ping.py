@@ -80,11 +80,11 @@ async def _(ping):
 async def _(ping):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xping = await eor(ping, "`MASA SI UBOT LUTPAN GA NYALA`")
+    xping = await eor(ping, "`Pinging....`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xping.edit(
-        f"**UBOTNYA LUTPAN NYALA YA AJG 🍭**\n** PING LU SEGEDE INI WOY** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**BOTNYA LUTPAN NYALA YA AJG 🍭**\n**NI PINGNYA SEGINI** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 
@@ -102,7 +102,7 @@ async def _(ping):
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
     await lping.edit(
-        f"❃ **Ping !!** "
+        f"❃ **PINGNYA SEGINIIIII !!** "
         f"`%sms` \n"
         f"❃ **Uptime -** "
         f"`{uptime}` \n"
@@ -156,8 +156,8 @@ async def _(pong):
     await kping.edit("8===✊D")
     await kping.edit("8===✊D💦")
     await kping.edit("8====D💦💦")
-    await kping.edit("**PERMISSSS**")
-    await kping.edit("**BENTARRR AJGGG LUTPAN MAU LEWAT.....**")
+    await kping.edit("**PERMISSSSIIIIIIIII**")
+    await kping.edit("**MINGGIR BEJIIIIIIRRRRR... LUTPAN MAU LEWAT.....**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit("😎")
@@ -169,7 +169,7 @@ async def _(pong):
 
 @lutpan_cmd(pattern="speedtest$")
 async def _(speed):
-    xxnx = await eor(speed, "`Running speed test...`")
+    xxnx = await eor(speed, "`Lagi ngecekkkk seberapaa kencengnya...`")
     test = Speedtest()
     test.get_best_server()
     test.download()
@@ -202,7 +202,7 @@ async def _(speed):
 async def _(pong):
     start = datetime.now()
     xx = await eor(pong, "`Sepong`")
-    await xx.edit("Sepong Sayang.....")
+    await xx.edit("Sepong Aanjjiiinnggggg.")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
     await xx.edit("🥵")

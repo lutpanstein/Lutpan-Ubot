@@ -44,7 +44,7 @@ lst = list(zip(tayrad[::4], tayrad[1::4], tayrad[2::4], tayrad[3::4]))
 lst.append([Button.inline("=", data="calc=")])
 
 
-@lutpab_cmd(pattern="calc")
+@lutpan_cmd(pattern="calc")
 async def icalc(e):
     udB.del_key("calc")
     if e.client._bot:

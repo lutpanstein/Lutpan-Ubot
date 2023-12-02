@@ -74,7 +74,7 @@ def LUTPANPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubot"),
+        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubo"),
         Button.url(get_string("bot_4"), "t.me/kazusupportgrp"),
     ]
 ]
@@ -82,11 +82,10 @@ buttons = [
 # Will move to strings
 alive_txt = """
 ◈ ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ
- 
+
   ◈ Version - {}
   ◈ Lutpanstein - {}
   ◈ Telethon - {}
-  ◈ Remake by Lutpan || Thanks for Kazu
 """
 
 in_alive = "{}\n\n◈ <b>Lutpan Version -><b> <code>{}</code>\n◈ <b>Lutpan -></b> <code>{}</code>\n◈ <b>Python -></b> <code>{}</code>\n◈ <b>Waktu aktif -></b> <code>{}</code>\n◈ <b>Branch -></b> [ {} ]\n\n• <b>© ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ</b>"
@@ -358,7 +357,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/lutpanstein/lutpansteinubot/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/lutpanstein/lutpanstein/tree/{branch}">[{branch}]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )

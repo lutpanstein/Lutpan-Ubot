@@ -57,8 +57,8 @@ async def set_afk(event):
                 media = reply.file.id
     await event.eor("`Done`", time=2)
     add_afk(text, media_type, media)
-    kazu_bot.add_handler(remove_afk, events.NewMessage(outgoing=True))
-    kazu_bot.add_handler(
+    lutpan_bot.add_handler(remove_afk, events.NewMessage(outgoing=True))
+    lutpan_bot.add_handler(
         on_afk,
         events.NewMessage(
             incoming=True, func=lambda e: bool(e.mentioned or e.is_private)

@@ -36,7 +36,7 @@ async def _help(lutpan):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
+                output += "\n◈ ᴋᴀᴢᴜ ᴜʙᴏᴛ"
                 await lutpan.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
@@ -51,7 +51,7 @@ async def _help(lutpan):
                         x += HNDLR + d
                         x += "\n"
                     x += "\n◈ ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
-                    await lutpan.eor(x)
+                    await Lutpan.eor(x)
                 except BaseException:
                     file = None
                     compare_strings = []

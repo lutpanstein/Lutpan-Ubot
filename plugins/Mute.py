@@ -122,7 +122,7 @@ async def _(e):
         name = (await e.client.get_entity(userid)).first_name
     else:
         return await xx.eor(get_string("tban_1"), time=3)
-    if userid == kazu_bot.uid:
+    if userid ==lutpan_bot.uid:
         return await xx.eor("`Aku tidak bisa membungkam diriku sendiri.`", time=3)
     try:
         bun = ban_time(tme)
@@ -134,7 +134,7 @@ async def _(e):
         )
         await eod(
             xx,
-            f"`Berhasil Dibisukan` [{name}](tg://user?id={userid}) `in {chat.title} for {tme}`",
+            f"`WKWKWKWKWK DIMUTE BEJIRRRRRR` [{name}](tg://user?id={userid}) `in {chat.title} for {tme}`",
             time=5,
         )
     except BaseException as m:
@@ -147,7 +147,7 @@ async def _(e):
     manager=True,
 )
 async def _(e):
-    xx = await e.eor("`Bentar...`")
+    xx = await e.eor("`Lah dimute wkwkwk fak kata lutpan teh...`")
     input = e.pattern_match.group(1).strip()
     chat = await e.get_chat()
     if e.reply_to_msg_id:

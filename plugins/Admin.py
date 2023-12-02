@@ -36,7 +36,7 @@ from telethon.tl.functions.messages import GetFullChatRequest, SetHistoryTTLRequ
 from telethon.tl.types import InputMessagesFilterPinned
 from telethon.utils import get_display_name
 
-from Lutpan dB import DEVLIST
+from Lutpan.dB import DEVLIST
 from Lutpan.fns.admins import ban_time
 
 from . import (
