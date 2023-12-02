@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org//file/d854abd533a783c6642b1.jpg" alt="Lutpan Logo">
+  <img src="" alt="Lutpan Logo">
 </p>
 <h1 align="center">
   <b>Lutpan ꭙ ᴜʙᴏᴛ​</b>
