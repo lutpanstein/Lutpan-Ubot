@@ -8,13 +8,13 @@
 from . import *
 
 START = """
-◈ **Help Menu** ◈
+◈ **HELP** ◈
 
 ✘  /start : Check I am Alive or not.
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
 
-🧑‍💻 Join **https://t.me/+Ae8rqIHVMLtmMTVl**
+🧑‍💻 Join **https://https://t.me/cari_pacar_online_tele**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
