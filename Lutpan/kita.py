@@ -5,7 +5,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-"""Userbot module for managing events. One of the main components of the userkazu_bot."""
+"""Userbot module for managing events. One of the main components of the userlutpan_bot."""
 
 import inspect
 import re
@@ -107,8 +107,8 @@ def command(**args):
                 return
 
         if allow_edited_updates:
-            kazu_bot.add_event_handler(func, events.MessageEdited(**args))
-        kazu_bot.add_event_handler(func, events.NewMessage(**args))
+            lutpan_bot.add_event_handler(func, events.MessageEdited(**args))
+        lutpan_bot.add_event_handler(func, events.NewMessage(**args))
 
     return decorator
 
@@ -181,7 +181,7 @@ def devs_cmd(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**✘ LUTPAN UBOT ERROR REPORT ✘**\n\n"
-                    link = "[Group Support](https://t.me/kazusupportgrp)"
+                    link = "[Group Support](https://t.me/cari_pacar_online_tele)"
                     text += "Jika mau, Anda bisa melaporkan error ini, "
                     text += f"Cukup forward saja pesan ini ke {link}.\n\n"
 
@@ -190,7 +190,7 @@ def devs_cmd(**args):
                     ftext += "\nkami hanya mencatat fakta error dan tanggal,"
                     ftext += "\nkami menghormati privasi Anda."
                     ftext += "\nJika mau, Anda bisa melaporkan error ini,"
-                    ftext += "\ncukup forward saja pesan ini ke @kazusupportgrp"
+                    ftext += "\ncukup forward saja pesan ini ke https://t.me/cari_pacar_online_tele"
                     ftext += "\n================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
                     ftext += "\nTanggal : " + date

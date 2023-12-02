@@ -14,7 +14,7 @@ run_as_module = False
 
 class LutpanConfig:
     lang = "id"
-    thumb = "https://graph.org//file/d854abd533a783c6642b1.jpg"
+    thumb = "https://graph.org/file/ad02750e78083a8c57e90.jpg"
 
 if sys.argv[0] == "-m":
     run_as_module = True
@@ -82,7 +82,7 @@ if sys.argv[0] == "-m":
             except Exception as er:
                 LOGS.exception(er)
     elif not asst.me.bot_inline_placeholder:
-        lutpan_bot.run_in_loop(enable_inline(lutpan_bot, asst.me.username))
+        lutpanz_bot.run_in_loop(enable_inline(lutpan_bot, asst.me.username))
 
     vcClient = vc_connection(udB, lutpan_bot)
 
@@ -94,7 +94,7 @@ if sys.argv[0] == "-m":
     DUAL_HNDLR = udB.get_key("DUAL_HNDLR") or "/"
     SUDO_HNDLR = udB.get_key("SUDO_HNDLR") or "NO_HNDLR"
 else:
-    print("Lutpan 2023 © Lutpan-Ubot")
+    print("Lutpan 2022 © Lutpan-Ubot")
 
     from logging import getLogger
 
