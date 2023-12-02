@@ -14,7 +14,7 @@ from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery, NewMessage
 from telethon.tl.types import InputWebDocument
 
-from .. import LOGS, asst, udB, kazu_bot
+from .. import LOGS, asst, udB, lutpan._bot
 from ..fns.admins import admin_check
 from . import append_or_update, owner_and_sudos
 
@@ -32,9 +32,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/lutpanstein",
+            url="https://github.com/lutpanstein/lutpansteinubot",
         ),
-        Button.url("Support", url="https://t.me/+Ae8rqIHVMLtmMTVl"),
+        Button.url("Support", url="https://t.me/cari_pacar_online_tele"),
     ]
 ]
 
@@ -63,7 +63,7 @@ def callback(data=None, from_users=[], admins=False, owner=False, **kwargs):
     """Assistant's callback decorator"""
     if "me" in from_users:
         from_users.remove("me")
-        from_users.append(kazu_bot.uid)
+        from_users.append(lutpan_bot.uid)
 
     def ay(func):
         async def wrapper(event):

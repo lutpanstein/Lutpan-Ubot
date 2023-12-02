@@ -151,10 +151,10 @@ def lutpan_cmd(
                     udB.get_key("LOG_CHANNEL"),
                     "Session String expired, create new session from 👇",
                     buttons=[
-                        Button.url("Bot", "t.me/kazu_stringbot?start="),
+                        Button.url("Bot", "t.me/lutpan_stringbot?start="),
                         Button.url(
                             "Repl",
-                            "https://replit.com/@Kazu/KazuStringSession",
+                            "https://replit.com/@Lutpan/LutpanStringSession",
                         ),
                     ],
                 )
@@ -167,7 +167,7 @@ def lutpan_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**Lutpan Client Error:** `Forward this to` @kazusupportgrp\n\n"
+                ftext = "**Lutpan Client Error:** `Forward this to` @cari_pacar_online_tele\n\n"
                 ftext += f"**Lutpan Version:** `{str(pyver)}"
                 ftext += "`\n**Userbot Version:** `" + str(lutpan_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
@@ -197,7 +197,7 @@ def lutpan_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="*Lutpan Client Error:** `Forward this to` @kazusupportgrp\n\n",
+                            caption="*Lutpan Client Error:** `Forward this to` @cari_pacar_online_tele\n\n",
                         )
                 else:
                     error_log = await asst.send_message(
