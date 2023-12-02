@@ -15,7 +15,7 @@ STRINGS = {
 • Here, are the Some Basic stuff from, where you can Know, about its Usage.""",
     2: """🎉** About Lutpan Ubot**
 
- Lutpan Ubot is Pluggable and powerful Telethon and Pyrogram Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
+ Kazu Ubot is Pluggable and powerful Telethon and Pyrogram Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
 
 ❣ Kang by **@Lutpanstein**""",
     3: """**💡• FAQs •**
@@ -32,13 +32,13 @@ STRINGS = {
 -> [Also Check](https://t.me/UltroidUpdates/14)
 
 **• To Know About Updates**
-  - Join https://t.me/+Ae8rqIHVMLtmMTVl.""",
+  - Join @kazusupportgrp.""",
     4: f"""• `To Know All Available Commands`
 
   - `{HNDLR}help`
   - `{HNDLR}cmds`""",
     5: """• **For Any Other Query or Suggestion**
-  - Move to **https://t.me/+Ae8rqIHVMLtmMTVl**.
+  - Move to **@kazusupportgrp**.
 
 • Thanks for Reaching till END.""",
 }
