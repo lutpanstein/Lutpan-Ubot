@@ -68,7 +68,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(lutpan_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@Lutpanstein**"
+        msg += "\n\n• 〄 Powered by **@Lutpanstein  || @akunkeduaLutpan 〄**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],

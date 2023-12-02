@@ -19,7 +19,7 @@ from telethon.tl.types import Channel, Chat
 from telethon.utils import get_display_name
 
 from Lutpan.dB.asst_fns import *
-from Lutpan dB.botchat_db import *
+from Lutpan.dB.botchat_db import *
 from Lutpan.fns.helper import inline_mention
 
 from . import *
