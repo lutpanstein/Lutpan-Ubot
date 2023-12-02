@@ -515,7 +515,7 @@ def telegraph_client():
     profile_url = (
         f"https://t.me/{lutpan_bot.me.username}"
         if lutpan_bot.me.username
-        else "https://lutpanstein"
+        else "https://t.me/kazusupportgrp"
     )
     try:
         TelegraphClient.create_account(
@@ -524,7 +524,7 @@ def telegraph_client():
     except Exception as er:
         if "SHORT_NAME_TOO_LONG" in str(er):
             TelegraphClient.create_account(
-                short_name="lutpanuser", author_name=gd_name, author_url=profile_url
+                short_name="lutpanruser", author_name=gd_name, author_url=profile_url
             )
         else:
             LOGS.exception(er)

@@ -164,7 +164,7 @@ async def allcmds(event, telegraph):
             txt += HNDLR + zz + "\n"
         txt += "\n\n"
     t = telegraph.create_page(title="Lutpan All Cmds", content=[txt])
-    await eor(event, f"All Lutpan Cmds : [Click Here]({t['url']})", link_preview=False)
+    await eor(event, f"All Kazu Cmds : [Click Here]({t['url']})", link_preview=False)
 
 
 async def ReTrieveFile(input_file_name):

@@ -17,7 +17,7 @@ try:
     from .. import _lutpan_cache
     from .._misc import SUDO_M
 except ImportError:
-    _kazu_cache = {}
+    _lutpan_cache = {}
     SUDO_M = None
 
 
@@ -63,8 +63,8 @@ async def _callback_check(event):
 
 
 async def get_update_linked_chat(event):
-    if _kazu_cache.get("LINKED_CHATS") and _lutpan_cache["LINKED_CHATS"].get(event.chat_id):
-        _ignore = _kazu_cache["LINKED_CHATS"][event.chat_id]["linked_chat"]
+    if _lutpan_cache.get("LINKED_CHATS") and _lutpan_cache["LINKED_CHATS"].get(event.chat_id):
+        _ignore = _lutpan_cache["LINKED_CHATS"][event.chat_id]["linked_chat"]
     else:
         channel = await event.client(
             functions.channels.GetFullChannelRequest(event.chat_id)
