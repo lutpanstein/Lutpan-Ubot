@@ -178,8 +178,8 @@ class LutpanClient(TelegramClient):
 
         from telethon.tl.types import DocumentAttributeFilename
 
-        from Kazu.fns.FastTelethon import download_file
-        from Kazu.fns.helper import progress
+        from Lutpan.fns.FastTelethon import download_file
+        from Lutpan.fns.helper import progress
 
         start_time = time.time()
         # Auto-generate Filename
