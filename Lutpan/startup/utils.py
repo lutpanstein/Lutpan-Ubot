@@ -19,7 +19,7 @@ def load_addons(plugin_name):
     from .._misc import _supporter as xxx
     from Lutpan import fns
     from .._misc._assistant import asst_cmd, callback, in_pattern
-    from .._misc._decorators import kazu_cmd
+    from .._misc._decorators import lutpan_cmd
     from .._misc._supporter import Config, admin_cmd, sudo_cmd
     from .._misc._wrappers import eod, eor
     from ..configs import Var

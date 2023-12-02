@@ -250,7 +250,7 @@ async def autopilot():
             r = await lutpan_bot(
                 CreateChannelRequest(
                     title="Logs Lutpan Ubot",
-                    about="Logs Lutpan Ubot \n\n Cʀᴇᴀᴛᴇᴅ Bʏ @Lutpanstein",
+                    about="Logs Lutpan Ubot \n\n Cʀᴇᴀᴛᴇᴅ @akunkeduaLutpan Bʏ @Lutpanstein",
                     megagroup=True,
                 ),
             )
@@ -316,7 +316,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org//file/d854abd533a783c6642b1.jpg",
+            "https://graph.org/file/ad02750e78083a8c57e90.jpg.jpg",
             "resources/extras/logo.jpg",
         )
         ll = await lutpan_bot.upload_file(photo)
@@ -385,7 +385,7 @@ async def customize():
         await asyncio.sleep(1)
         await lutpan_bot.send_message(
             "botfather",
-            f"✨ Powerful Lutpan Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @Lutpanstein ✨",
+            f"✨ ASSISTENTNYA LUTPAN✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @Lutpanstein @akunkeduaLutpan ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -443,13 +443,13 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """ **Thanks for Deploying Lutpan Ubot!**
-• Here, are the Some Basic stuff from, where you can Know, about its Usage."""
+        MSG = """ **UDAH YA AJG UDAH DIBUAT UBOTNYA**
+• **WOY BOTNYA UDAH NYALA MINIMAL BILANG MAKASIH KE LUTPAN**"""
         PHOTO = "https://graph.org//file/97b753a248f764d72d47c.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Lutpan Ubot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(lutpan_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Lutpan Ubot udah kedeploy ajg!**\n➖➖➖➖➖➖➖➖➖➖\n**User**: {inline_mention(lutpan_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @Lutpanstein\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         if prev_spam := udB.get_key("LAST_UPDATE_LOG_SPAM"):
             try:
