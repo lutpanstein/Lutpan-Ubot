@@ -52,7 +52,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/ionmusic/Kazu-Ubot"),
+        Button.url("• Repo •", url="https://github.com/lutpanstein/lutpansteinubot"),
         Button.url("• Support •", url="t.me/kazusupportgrp"),
     ],
 ]
