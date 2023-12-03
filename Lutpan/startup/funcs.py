@@ -250,7 +250,7 @@ async def autopilot():
             r = await lutpan_bot(
                 CreateChannelRequest(
                     title="Logs Lutpan Ubot",
-                    about="Logs Lutpan Ubot \n\n Cʀᴇᴀᴛᴇᴅ Bʏ @kazusupportgrp",
+                    about="Logs Lutpan Ubot \n\n Cʀᴇᴀᴛᴇᴅ Bʏ @Lutpanstein",
                     megagroup=True,
                 ),
             )
@@ -316,7 +316,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://graph.org//file/d854abd533a783c6642b1.jpg",
+            "https://graph.org/file/ad02750e78083a8c57e90.jpg",
             "resources/extras/logo.jpg",
         )
         ll = await lutpan_bot.upload_file(photo)
@@ -348,7 +348,7 @@ async def customize():
             sir = f"@lutpan_bot.me.username}"
         file = random.choice(
             [
-                "https://graph.org//file/d854abd533a783c6642b1.jpg",
+                "https://graph.org/file/ad02750e78083a8c57e90.jpg",
                 "resources/extras/logo.jpg",
             ]
         )
@@ -385,7 +385,7 @@ async def customize():
         await asyncio.sleep(1)
         await lutpan_bot.send_message(
             "botfather",
-            f"✨ **ASSISTEN LUTPAN** ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @Lutpanstein @akunkeduaLutpan ✨",
+            f"✨ BOT MANAGE DARI LUTPAN ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @Lutpanstein @akunKeduaLutpan ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -445,11 +445,11 @@ async def ready():
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
         MSG = """ **Thanks for Deploying Lutpan Ubot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://graph.org//file/97b753a248f764d72d47c.jpg"
+        PHOTO = "https://graph.org/file/488f04c9ec47bdc347d2e.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Lutpan Ubot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(lutpan_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @kazusupportgrp\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Lutpan Ubot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(lutpan_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @Lutpanstein\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         if prev_spam := udB.get_key("LAST_UPDATE_LOG_SPAM"):
             try:
