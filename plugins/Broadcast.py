@@ -104,7 +104,6 @@ async def gucast(event):
 
 
 @lutpan_cmd(pattern="addbl")
-@register(incoming=true, from_users=DEVLIST, pattern=r"^addbl")
 async def blacklist_(event):
     await gblacker(event, "add")
 
