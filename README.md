@@ -78,7 +78,7 @@ Lutpan is licensed under [GNU Affero General Public License](https://www.gnu.org
 * [![[𝐙𝐚𝐞𝐧]ꗈ‽ ⁪⁬⁮⁮⁮](https://img.shields.io/static/v1?label=[𝐙𝐚𝐞𝐧]&message=ꗈ‽&color=critical)](https://t.me/TeleUdahRusak)
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
 * [MarshalX](https://github.com/MarshalX) for [PyTgCalls.](https://github.com/MarshalX/tgcalls)
-* [![Lutpanstein](https://img.shiel.io/static/v2?label=Lutpanstein&messange=ft.Telegram&message=color=yellow&black=logo=#26A5E4)](https://t.me/akunkeduaLutpan)
+* [![Lutpanstein](https://img.shiel.io/static/v2?label=Lutpanstein&messange=ft.Telegram&message=color=yellow&black=logo=Telegram)](https://t.me/akunkeduaLutpan)
 
 > Kanged by
 * [![Lutpanstein](https://img.shields.io/static/v1?label=Lutpanstein&message=ft.Telegram&color=pink)](https://t.me/Lutpanstein)
