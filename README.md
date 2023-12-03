@@ -5,23 +5,20 @@
   <b>Lutpan ꭙ ᴜʙᴏᴛ​</b>
 </h1>
 
-<b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon and Pyrogram.</b>
+<b>A kalo ada error bilang aja. hasil belajar dari Lutpan murid Mas Kazu sama Mas Cleo.</b>
 
-<a href="https://github.com/lutpanstein/lutpansteinubot/commits"> <img src="https://github.com/lutpanstein/lutpansteinubot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/lutpanstein/lutpansteinubot)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://GitHub.com/lutpanstein/lutpansteinubot/graphs/commit-activity)
-[![CodeQuality](https://img.shields.io/codacy/grade/ad02750e78083a8c57e90?color=blue&logo=codacy)](https://app.codacy.com/gh/lutpanstein/lutpansteinubot/dashboard)
-[![GitHub Forks](https://img.shields.io/github/forks/lutpanstein/lutpansteinubot?&logo=github)](https://github.com/lutpanstein/lutpansteinubot/fork)
-[![GitHub Stars](https://img.shields.io/github/stars/lutpanstein/lutpansteinubot?&logo=github)](https://github.com/lutpanstein/lutpansteinubot/stargazers)
+<a href="https://github.com/lutpanstein/Lutpan-Ubot/commits"> <img src="https://github.com/lutpanstein/lutpansteinubot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/lutpanstein/Lutpan-Ubot)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/lutpanstein/Lutpan-Ubot/graphs/commit-activity)
+[![CodeQuality](https://img.shields.io/codacy/grade/ad02750e78083a8c57e90?color=blue&logo=codacy)](https://app.codacy.com/gh/lutpanstein/Lutpan-Ubot/dashboard)
+[![GitHub Forks](https://img.shields.io/github/forks/lutpanstein/lutpansteinubot?&logo=github)](https://github.com/lutpanstein/Lutpan-Ubot/fork)
+[![GitHub Stars](https://img.shields.io/github/stars/lutpanstein/Lutpan-Ubot?&logo=github)](https://github.com/lutpanstein/Lutpan-Ubot/stargazers)
 ----
 
 ## Disclaimer
 
 ```
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu anda
-mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
-Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak.
+BOT INI HASIL KARYA LUTPAN MELALUI 100% FORK DAN EDIT DARI Kazu-Ubot
 ```
 
 # Tutorial 
@@ -43,7 +40,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 • `pip install pyUltroid`
 
- • `git clone https://github.com/lutpanstein/lutpansteinubot`
+ • `git clone https://github.com/lutpanstein/Lutpan-Ubot`
 
  • `cd Lutpan-Ubot`
 
@@ -65,13 +62,13 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 </details>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/lutpanstein/lutpansteinubot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/lutpanstein/Lutpan-Ubot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
 
 </details>
 
 # License
 [![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
-Kazu is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+Lutpan is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
 
 ---
 

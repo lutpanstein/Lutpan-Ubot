@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/lutpanstein/lutpansteinubot"
+REPO="https://github.com/lutpanstein/Lutpan-Ubot"
 DIR="/root/lutpanstein"
 
 spinner(){
