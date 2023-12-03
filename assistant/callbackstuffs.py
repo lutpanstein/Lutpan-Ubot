@@ -50,7 +50,7 @@ def text_to_url(event):
 
 _buttons = {
     "otvars": {
-        "text": "Variabel lain untuk ditetapkan https://t.me/Lutpanstein:",
+        "text": "Variabel lain untuk ditetapkan @kazusupportgrp:",
         "buttons": [
             [
                 Button.inline("TAG LOG", data="taglog"),
@@ -356,14 +356,14 @@ async def changes(okk):
     if len(changelog_str) > 1024:
         await okk.edit(get_string("upd_4"))
         await asyncio.sleep(2)
-        with open("Lutpan_updates.txt", "w+") as file:
+        with open("lutpan_updates.txt", "w+") as file:
             file.write(tl_chnglog)
         await okk.edit(
             get_string("upd_5"),
-            file="Lutpan_updates.txt",
+            file="lutpan_updates.txt",
             buttons=button,
         )
-        remove("Lutpan_updates.txt")
+        remove("lutpan_updates.txt")
         return
     await okk.edit(
         changelog_str,
