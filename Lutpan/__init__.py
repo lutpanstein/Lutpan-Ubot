@@ -82,7 +82,7 @@ if sys.argv[0] == "-m":
             except Exception as er:
                 LOGS.exception(er)
     elif not asst.me.bot_inline_placeholder:
-        lutpanz_bot.run_in_loop(enable_inline(lutpan_bot, asst.me.username))
+        lutpan_bot.run_in_loop(enable_inline(lutpan_bot, asst.me.username))
 
     vcClient = vc_connection(udB, lutpan_bot)
 
