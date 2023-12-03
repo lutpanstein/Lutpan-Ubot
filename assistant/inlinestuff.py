@@ -32,8 +32,8 @@ from . import _lutpan_cache
 
 SUP_BUTTONS = [
     [
-        Button.url("• GC MUTUALAN •", url="https://t.me/+Ae8rqIHVMLtmMTVl"),
-        Button.url("• CONTACT •", url="t.me/@Lutpanstein"),
+        Button.url("• SUPPORT •", url="https://t.me/lutpansupportgroup"),
+        Button.url("• CONTACT •", url="t.me/Lutpanstein"),
     ],
 ]
 
@@ -610,7 +610,7 @@ InlinePlugin.update(
     {
         "Pʟᴀʏ Sᴛᴏʀᴇ Aᴘᴘs": "app telegram",
         "Mᴏᴅᴅᴇᴅ Aᴘᴘs": "mods minecraft",
-        "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "go kazusupportgrp",
+        "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ": "go lutpansupportgroup",
         "WʜɪSᴘᴇʀ": "wspr @username Hello🎉",
         "YᴏᴜTᴜʙᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ": "yt Ed Sheeran Perfect",
         "Piston Eval": "run javascript console.log('Hello Lutpan')",
