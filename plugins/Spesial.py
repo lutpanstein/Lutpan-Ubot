@@ -58,7 +58,7 @@ from . import (
     lutpan_cmd,
     uploader,
 )
-from .Lutpan import all_col
+from .Karbon import all_col
 
 File = []
 
