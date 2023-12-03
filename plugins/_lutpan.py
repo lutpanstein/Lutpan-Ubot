@@ -11,7 +11,7 @@ from telethon.errors import (
     ChatSendMediaForbiddenError,
 )
 
-from . import LOG_CHANNEL, LOGS, Button, asst, kazu_cmd, eor, get_string
+from . import LOG_CHANNEL, LOGS, Button, asst, lutpan_cmd, eor, get_string
 
 REPOMSG = """
 ⚝ **ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ​** ⚝\n
@@ -22,7 +22,7 @@ REPOMSG = """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubot"),
+        Button.url(get_string("bot_3"), "https://github.com/lutpanstein/Lutpan-Ubot"),
         Button.url("Addons", "https://github.com/lutpanstein/Addons"),
     ],
     [Button.url("GROUP", "https://t.me/lutpansupportgroup")],
