@@ -42,7 +42,7 @@ import asyncio
 import re
 from os import remove
 
-from LutpandB import DEVLIST
+from Lutpan.dB import DEVLIST
 from Lutpan.dB.logusers_db import *
 from Lutpan.dB.pmpermit_db import *
 
