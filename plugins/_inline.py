@@ -52,8 +52,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/lutpanstein/lutpansteinubot"),
-        Button.url("• Support •", url="t.me/kazusupportgrp"),
+        Button.url("• Repo •", url="https://github.com/lutpanstein/Lutpan-Ubot"),
+        Button.url("• Support •", url="t.me/lutpansupportgroup"),
     ],
 ]
 

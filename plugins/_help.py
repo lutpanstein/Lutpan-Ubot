@@ -36,7 +36,7 @@ async def _help(lutpan):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n◈ ᴋᴀᴢᴜ ᴜʙᴏᴛ"
+                output += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
                 await lutpan.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
@@ -50,7 +50,7 @@ async def _help(lutpan):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n◈ ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
+                    x += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
                     await Lutpan.eor(x)
                 except BaseException:
                     file = None
@@ -84,7 +84,7 @@ async def _help(lutpan):
                     elif HELP.get("Addons") and file in HELP["Addons"]:
                         for i in HELP["Addons"][file]:
                             output += i
-                    output += "\n◈ ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
+                    output += "\n〄 ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ"
                     await lutpan.eor(output)
         except BaseException as er:
             LOGS.exception(er)

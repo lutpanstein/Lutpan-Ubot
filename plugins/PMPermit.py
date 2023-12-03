@@ -350,7 +350,7 @@ if udB.get_key("PMSETTING"):
                         caption=message_,
                     )
                 else:
-                    _to_delete[user.id] = await kazu_bot.send_message(
+                    _to_delete[user.id] = await lutpan_bot.send_message(
                         user.id, message_
                     )
             LASTMSG.update({user.id: event.text})

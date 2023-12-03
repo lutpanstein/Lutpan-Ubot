@@ -30,7 +30,7 @@ from telethon.errors.rpcerrorlist import (
 from Lutpan import *
 from Lutpan.kita import *
 from Lutpan._misc._assistant import asst_cmd, callback, in_pattern
-from Lutpan._misc._decorators import kazu_cmd, compile_pattern
+from Lutpan._misc._decorators import lutpan_cmd, compile_pattern
 from Lutpan._misc import owner_and_sudos, sudoers
 from Lutpan.fns.admins import admin_check
 from Lutpan._misc._wrappers import eod, eor
@@ -311,7 +311,7 @@ class Player:
         try:
             await vcClient(
                 functions.phone.CreateGroupCallRequest(
-                    self._chat, title="🎧 By Lutpanstein"
+                    self._chat, title="🎧 By Lutpan"
                 )
             )
         except Exception as e:

@@ -14,10 +14,10 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, kazu_cmd, eor, get_string
 
 REPOMSG = """
-◈ **ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ​** ◈\n
-◈ Repo - [Click Here](https://github.com/lutpanstein/lutpansteinubot)
-◈ Addons - [Click Here](https://github.com/lutpanstein/addons)
-◈ Support - @cari_pacar_online_tele
+⚝ **ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ​** ⚝\n
+⚝ Repo - [Click Here](https://github.com/lutpanstein/Lutpan-Ubot)
+⚝ Addons - [Click Here](https://github.com/lutpanstein/addons)
+⚝ Support - https://t.me/lutpansupportgroup
 """
 
 RP_BUTTONS = [
@@ -25,10 +25,10 @@ RP_BUTTONS = [
         Button.url(get_string("bot_3"), "https://github.com/lutpanstein/lutpansteinubot"),
         Button.url("Addons", "https://github.com/lutpanstein/Addons"),
     ],
-    [Button.url("GROUP", "https://t.me/cari_pacar_online_tele")],
+    [Button.url("GROUP", "https://t.me/lutpansupportgroup")],
 ]
 
-LUTPANSTRING = """🎇 **Thanks for Deploying ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ!**
+LUTPANSTRING = """🎇 **ʟᴜᴛᴘᴀɴ ᴜʙᴏᴛ ꜱɪᴀᴘ ᴅɪᴘᴀᴋᴀɪ!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
