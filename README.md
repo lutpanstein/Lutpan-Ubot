@@ -5,9 +5,9 @@
   <b>Lutpan ꭙ ᴜʙᴏᴛ​</b>
 </h1>
 
-<b>A kalo ada error bilang aja. hasil belajar dari Lutpan murid Mas Kazu sama Mas Cleo.</b>
+<b> kalo ada error bilang aja. hasil belajar dari Lutpan murid Mas Kazu sama Mas Cleo.</b>
 
-<a href="https://github.com/lutpanstein/Lutpan-Ubot/commits"> <img src="https://github.com/lutpanstein/lutpansteinubot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/lutpanstein/Lutpan-Ubot/commits"> <img src="https://github.com/lutpanstein/Lutpan-Ubot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/lutpanstein/Lutpan-Ubot)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue)](https://github.com/lutpanstein/Lutpan-Ubot/graphs/commit-activity)
 [![CodeQuality](https://img.shields.io/codacy/grade/ad02750e78083a8c57e90?color=blue&logo=codacy)](https://app.codacy.com/gh/lutpanstein/Lutpan-Ubot/dashboard)
@@ -18,7 +18,7 @@
 ## Disclaimer
 
 ```
-BOT INI HASIL KARYA LUTPAN MELALUI 100% FORK DAN EDIT DARI Kazu-Ubot
+BOT INI HASIL KARYA LUTPAN MELALUI 100% FORK DAN EDIT DARI Kazu-Ubot Link cari aja sendiri
 ```
 
 # Tutorial 
@@ -62,7 +62,7 @@ BOT INI HASIL KARYA LUTPAN MELALUI 100% FORK DAN EDIT DARI Kazu-Ubot
 
 </details>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/lutpanstein/Lutpan-Ubot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/lutpanstein/Lutpan-Ubot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=pink"width="300" /></a></p>
 
 </details>
 
