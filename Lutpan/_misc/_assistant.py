@@ -18,7 +18,7 @@ from .. import LOGS, asst, udB, lutpan_bot
 from ..fns.admins import admin_check
 from . import append_or_update, owner_and_sudos
 
-OWNER = lutpanstein_bot.full_name
+OWNER = lutpan_bot.full_name
 
 MSG = f"""
 **ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ**
