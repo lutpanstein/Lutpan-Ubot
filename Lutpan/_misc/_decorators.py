@@ -154,7 +154,7 @@ def lutpan_cmd(
                         Button.url("Bot", "t.me/lutpan_stringbot?start="),
                         Button.url(
                             "Repl",
-                            "https://replit.com/@Luypan/LutpanStringSession",
+                            "https://replit.com/@Lutpan/LutpanStringSession",
                         ),
                     ],
                 )

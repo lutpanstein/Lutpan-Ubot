@@ -24,7 +24,7 @@ MSG = f"""
 **ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ**
 ➖➖➖➖➖➖➖➖➖➖
 **Owner**: [{OWNER}](tg://user?id={lutpan_bot.uid})
-**Support**: @Lutpanstein
+**Support**: @lutpansupportgroup
 ➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -32,9 +32,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/lutpanstein/lutpansteinubot",
+            url="https://github.com/lutpanstein/Lutpan-Ubot",
         ),
-        Button.url("Support", url="https://t.me/Lutpanstein"),
+        Button.url("Support", url="https://t.me/lutpansupportgroup"),
     ]
 ]
 
@@ -92,7 +92,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ",
-                        url="https://t.me/Lutpanstein",
+                        url="https://t.me/lutpansupportgroup",
                         description="© ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ",
                         text=MSG,
                         thumb=InputWebDocument(
@@ -127,7 +127,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/Lutpanstein"
+                                    "Report", "https://t.me/lutpansupportgroup"
                                 ),
                             )
                         ]
