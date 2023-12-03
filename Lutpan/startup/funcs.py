@@ -99,11 +99,11 @@ async def join_ajg():
     from .. import lutpan_bot
 
     try:
-        await lutpan_bot(JoinChannelRequest("kynansupport"))
+        await lutpan_bot(JoinChannelRequest("lutpansupportgroup"))
         await lutpan_bot(JoinChannelRequest("KazuSupportGrp"))
     except rpcerrorlist.ChannelPrivateError:
         print(
-            "Lu Di Ban Di @KazuSupportGrp atau @kynansupport Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu Sana."
+            "Lu Di Ban Di @KazuSupportGrp atau @lutpansupportgroup Jadi Ga Bisa Pake Bot Ini ! Minta Unban Dulu Sana."
         )
         sys.exit(1)
 
