@@ -33,7 +33,7 @@ from . import *
 from ._inline import something
 
 
-@lutpan_cmd(pattern="[Gg][c][a][s][t]( (.*)|$)", fullsudo=false)
+@lutpan_cmd(pattern="[Gg][c][a][s][t]( (.*)|$)", fullsudo=False)
 async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -70,10 +70,10 @@ async def gcast(event):
                 except baseexception as h:
                     err += f"• {str(h)}" + "\n"
                     er += 1
-    await kk.edit(f"**KEKIRIM KE {done} GECEH YA AJG, YG {er} gamasuk lu dimute kali wkwkwkwk.**")
+    await kk.edit(f"**KEKIRIM KE {done} GECEH YA AJG, YG {er} gamasuk.Kata Lutpan lu dimute kali wkwkwkwk.**")
 
 
-@lutpan_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=false)
+@lutpan_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=False)
 async def gucast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
