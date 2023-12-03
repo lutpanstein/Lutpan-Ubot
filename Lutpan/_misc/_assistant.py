@@ -14,7 +14,7 @@ from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery, NewMessage
 from telethon.tl.types import InputWebDocument
 
-from .. import LOGS, asst, udB, lutpan._bot
+from .. import LOGS, asst, udB, lutpan_bot
 from ..fns.admins import admin_check
 from . import append_or_update, owner_and_sudos
 
@@ -23,7 +23,7 @@ OWNER = lutpanstein_bot.full_name
 MSG = f"""
 **ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ**
 ➖➖➖➖➖➖➖➖➖➖
-**Owner**: [{OWNER}](tg://user?id={lutpanstein_bot.uid})
+**Owner**: [{OWNER}](tg://user?id={lutpan_bot.uid})
 **Support**: @Lutpanstein
 ➖➖➖➖➖➖➖➖➖➖
 """
@@ -34,7 +34,7 @@ IN_BTTS = [
             "Repository",
             url="https://github.com/lutpanstein/lutpansteinubot",
         ),
-        Button.url("Support", url="https://t.me/cari_pacar_online_tele"),
+        Button.url("Support", url="https://t.me/Lutpanstein"),
     ]
 ]
 
@@ -92,11 +92,11 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                 res = [
                     await event.builder.article(
                         title="ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ",
-                        url="https://t.me/+Ae8rqIHVMLtmMTVl",
+                        url="https://t.me/Lutpanstein",
                         description="© ʟᴜᴛᴘᴀɴ ɢᴀᴄᴏʀ ᴘᴀʀᴀʜ",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org//file/d854abd533a783c6642b1.jpg",
+                            "https://graph.org/file/ad02750e78083a8c57e90.jpg",
                             0,
                             "image/jpeg",
                             [],
@@ -127,7 +127,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/+Ae8rqIHVMLtmMTVl"
+                                    "Report", "https://t.me/Lutpanstein"
                                 ),
                             )
                         ]
