@@ -50,7 +50,7 @@ def text_to_url(event):
 
 _buttons = {
     "otvars": {
-        "text": "Variabel lain untuk ditetapkan https://t.me/cari_pacar_online_tele:",
+        "text": "Variabel lain untuk ditetapkan https://t.me/Lutpanstein:",
         "buttons": [
             [
                 Button.inline("TAG LOG", data="taglog"),
