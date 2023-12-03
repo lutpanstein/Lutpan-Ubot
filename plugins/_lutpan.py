@@ -59,7 +59,7 @@ async def useAyra(rs):
     msg = await asst.send_message(
         LOG_CHANNEL,
         LUTPANSTRING,
-        file="https://telegra.ph/file/e2f568b76280fadc8ee54.jpg",
+        file="https://telegra.ph/file/c7af85370a9c9a48a8392.png",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
