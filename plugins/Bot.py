@@ -25,7 +25,7 @@ from telethon.errors.rpcerrorlist import (
     ChatSendMediaForbiddenError,
 )
 
-from lutpan.version import __version__ as LutpanVer
+from Lutpan.version import __version__ as LutpanVer
 from Lutpan.dB import DEVLIST
 from . import HOSTED_ON, LOGS
 
