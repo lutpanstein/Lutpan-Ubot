@@ -181,7 +181,7 @@ def devs_cmd(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**✘ LUTPAN UBOT ERROR REPORT ✘**\n\n"
-                    link = "[Group Support](https://t.me/cari_pacar_online_tele)"
+                    link = "[Group Support](https://t.me/lutpansupportgroup)"
                     text += "Jika mau, Anda bisa melaporkan error ini, "
                     text += f"Cukup forward saja pesan ini ke {link}.\n\n"
 
@@ -190,7 +190,7 @@ def devs_cmd(**args):
                     ftext += "\nkami hanya mencatat fakta error dan tanggal,"
                     ftext += "\nkami menghormati privasi Anda."
                     ftext += "\nJika mau, Anda bisa melaporkan error ini,"
-                    ftext += "\ncukup forward saja pesan ini ke https://t.me/cari_pacar_online_tele"
+                    ftext += "\ncukup forward saja pesan ini ke https://t.me/lutpansupportgroup"
                     ftext += "\n================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
                     ftext += "\nTanggal : " + date
