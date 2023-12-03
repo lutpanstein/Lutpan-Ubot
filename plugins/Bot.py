@@ -88,7 +88,7 @@ alive_txt = """
   ⚝ Telethon - {}
 """
 
-in_alive = "{}\n\n◈ <b>Lutpan Version -><b> <code>{}</code>\n◈ <b>Lutpan -></b> <code>{}</code>\n⚝ <b>Python -></b> <code>{}</code>\n◈ <b>Waktu aktif -></b> <code>{}</code>\n⚝ <b>Branch -></b> [ {} ]\n\n• <b>〄 ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ</b>"
+in_alive = "{}\n\n◈ <b>Lutpan Version -><b> <code>{}</code>\n⚝ <b>Lutpan -></b> <code>{}</code>\n⚝ <b>Python -></b> <code>{}</code>\n◈ <b>Waktu aktif -></b> <code>{}</code>\n⚝ <b>Branch -></b> [ {} ]\n\n• <b>〄 ʙᴏᴛɴʏᴀ ʟᴜᴛᴘᴀɴ</b>"
 
 
 async def get_readable_time(seconds: int) -> str:
