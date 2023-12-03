@@ -345,7 +345,7 @@ async def customize():
         if not lutpan_bot.me.username:
             sir = lutpan_bot.me.first_name
         else:
-            sir = f"@lutpan_bot.me.username}"
+            sir = f"@{lutpan_bot.me.username}"
         file = random.choice(
             [
                 "https://graph.org/file/ad02750e78083a8c57e90.jpg",
