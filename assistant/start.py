@@ -33,7 +33,7 @@ if Owner_info_msg is None:
 """
 
 
-_settings 
+_settings = [
     [
         Button.inline("API Kᴇʏs", data="cbs_apiset"),
         Button.inline("Pᴍ Bᴏᴛ", data="cbs_chatbot"),
