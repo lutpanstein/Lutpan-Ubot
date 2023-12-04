@@ -1,4 +1,4 @@
-https://t.me/addemoji/LutpanMotionsfrom .. import udB
+from .. import udB
 
 
 def get_all_channels() -> dict:
