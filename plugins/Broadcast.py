@@ -25,7 +25,6 @@
 import asyncio
 
 from Lutpan.dB import DEVLIST
-from Lutpan.dB.broadcast_db
 from Lutpan.fns.tools import create_tl_btn, format_btn, get_msg_button
 from telethon.errors.rpcerrorlist import FloodWaitError
 
