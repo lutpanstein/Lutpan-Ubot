@@ -41,4 +41,4 @@ class KeyManager:
         udB.set_key(self._key, content)
 
     def contains(self, item):
-        return item in self.get()￼Enter
+        return item in self.get()
