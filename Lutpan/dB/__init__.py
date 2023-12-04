@@ -30,8 +30,8 @@ DEVLIST = [
     961659670,  # kazu
     984144778,  # aki-aki
     479344690,  # rey
-    6625206904,  #Lutpan
-    5970067140,   #Lutpan
+    6625206904,  # Lutpansteinnnnnnnnnnn
+    5970067140,   # Lutpanstein
 ]
 
 
