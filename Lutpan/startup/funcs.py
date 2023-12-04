@@ -236,9 +236,9 @@ async def autopilot():
     if not channel:
 
         async def _save(exc):
-            udB._cache["LOG_CHANNEL"] = Lutpan_bot.me.id
+            udB._cache["LOG_CHANNEL"] = lutpan_bot.me.id
             await asst.send_message(
-                Lutpan_bot.me.id, f"Gagal Membuat Saluran Log karena {exc}.."
+                lutpan_bot.me.id, f"Gagal Membuat Saluran Log karena {exc}.."
             )
 
         if lutpan_bot._bot:
