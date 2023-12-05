@@ -19,16 +19,20 @@
 """
 
 
+from . import get_help
+
+__doc__ = get_help("help_blacklist")
+
+
 from Lutpan.dB.blacklist_db import (
     add_blacklist,
     get_blacklist,
     list_blacklist,
     rem_blacklist,
 )
+from . import events, get_string, udB, lutpan_bot, lutpan_cmd
 
-from . import lutpan_bot, lutpan_cmd, events, get_string, udB
-
-
+     
 @lutpan_cmd(pattern="blacklist( (.*)|$)", admins_only=True)
 async def af(e):
     wrd = e.pattern_match.group(1).strip()
@@ -66,14 +70,12 @@ async def lsnote(e):
 
 async def blacklist(e):
     if x := get_blacklist(e.chat_id):
-        for z in e.text.lower().split():
-            for zz in x:
-                if z == zz:
-                    try:
-                        await e.delete()
-                        break
-                    except BaseException:
-                        break
+        text = e.text.lower().split()
+        if any((z in text) for z in x):
+            try:
+                await e.delete()
+            except BaseException:
+                pass
 
 
 if udB.get_key("BLACKLIST_DB"):
