@@ -1,18 +1,9 @@
-######## Lutpan #######
+FROM lutpanstein/man-userbot:buster
 
-FROM python:3.10
+RUN git clone -b Man-Userbot https://github.com/lutpanstein/Man-Userbot /home/man-userbot/ \
+    && chmod 777 /home/man-userbot \
+    && mkdir /home/man-userbot/bin/
 
-RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg neofetch apt-utils libmediainfo0v5 \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*WORKDIR /app
+WORKDIR /home/man-userbot/
 
-COPY installer.sh .
-
-RUN bash installer.sh
-
-# changing workdir
-WORKDIR "/root/lutpanstein"
-
-# start the bot.
-CMD ["bash", "startup"]
+CMD [ "bash", "start" ]

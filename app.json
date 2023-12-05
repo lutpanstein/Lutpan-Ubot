@@ -1,43 +1,38 @@
 {
-    "name": "Lutpan-Ubot",
-    "description": "KALO Lutpan-Ubot ERROR BILANG AJA CUMA BENERINNYA GABISA BURU²",
-    "logo": "https://graph.org/file/ad02750e78083a8c57e90.jpg",
-    "keywords": [
-        "Telethon",
-        "Pyrogram"
-    ],
-    "repository": "https://github.com/lutpanstein/Lutpan-Ubot",
-    "success_url": "https://t.me/Lutpanstein",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "Ambil di my.telegram.org",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Ambil di my.telegram.org",
-            "required": true
-        },
-        "SESSION": {
-            "description": "Silakan isi Telethon Atau Pyrogram V2",
-            "value": ""
-        },
-        "HEROKU_API": {
-            "description": "Isi  Jangan Dikosongin.",
-            "required": true
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Isi  Jangan Dikosongin",
-            "value": "",
-            "required": true
-        }
+  "name": "Lutpan Userbot",
+  "description": "[𝙻𝚄𝚃𝙿𝙰𝙽 𝚄𝚂𝙴𝚁𝙱𝙾𝚃] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan API KEY di web my.telegram.org Masukan yg APP ID Telegram",
+      "required": true
     },
+    "API_HASH": {
+      "description": "Dapatkan API Hash di web my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Buat Bot di t.me/botfather Masukan BOT tokennya disini〔 Bila Tidak tau bisa di /skip 〕",
+      "required": false
+    },
+     "STRING_SESSION": {
+      "description": "Dapatkan String Session di Grup » https://t.me/SharingUserbot » Lalu ketik #string",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
+      "required": true
+    }
+  },
   "addons": [
     {
-      "plan": "rediscloud",
+    "plan": "heroku-postgresql",
       "options": {
-        "maxmemory-policy": "allkeys-lru",
-        "maxmemory-redis": "2GB"
+        "version": "12"
       }
     }
   ],
@@ -49,10 +44,10 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
   ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "basic"
-        }
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
     }
+  }
 }
