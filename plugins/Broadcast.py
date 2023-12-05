@@ -29,10 +29,9 @@ __doc__ = get_help("help_broadcast")
 import asyncio
 import io
 
-from telethon.utils import get_display_name
+from telethon.utils import get_display_name, get_string
 
-from Lutpan.dB.base import KeyManager
-from . import event, eor, get_string, udB, lutpan_bot, lutpan_cmd
+from Lutpan.dB.base import KeyManager, eor, udB, lutpan_bot, lutpan_cmd
 
 from Lutpan.dB import DEVLIST
 from Lutpan.fns.tools import create_tl_btn, format_btn, get_msg_button
