@@ -22,14 +22,23 @@
 ๏ **perintah:** `blchat`
 ◉ **keterangan:** melihat daftar anti gcast.
 """
+from . import get_help
+
+__doc__ = get_help("help_broadcast")
+
 import asyncio
+import io
+
+from telethon.utils import get_display_name
+
+from Lutpan.dB.base import KeyManager
+from . import event, eor, get_string, udB, lutpan_bot, lutpan_cmd
 
 from Lutpan.dB import DEVLIST
 from Lutpan.fns.tools import create_tl_btn, format_btn, get_msg_button
 from telethon.errors.rpcerrorlist import FloodWaitError
 
-from . import *
-from ._inline import something
+
 
 
 @lutpan_cmd(pattern="[Gg][c][a][s][t]( (.*)|$)", fullsudo=False)
